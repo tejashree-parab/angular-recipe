@@ -7,9 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-receipe-app';
-  selectedMenu;
-
-  menuSelectionFired(menuSelection: string){
-    this.selectedMenu = menuSelection;
-  }
 }

@@ -20,25 +20,33 @@
                     Manage Recipe
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a href="#" class="dropdown-item" (click)="addToShoppingList()">
+                    <li><a 
+                          class="dropdown-item" 
+                          (click)="addToShoppingList()" 
+                          style="cursor: pointer;">
                         To Shopping List
                     </a></li>
-                    <li><a href="#" class="dropdown-item">
+                    <li><a 
+                          class="dropdown-item" 
+                          style="cursor: pointer;"
+                          [routerLink]="['edit']">
                         Edit Recipe
                     </a></li>
-                    <li><a href="#" class="dropdown-item">
+                    <li><a 
+                        class="dropdown-item" 
+                        style="cursor: pointer;">
                         Delete Recipe
                     </a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row mt-3">
         <div class="col-sm-12">
             {{ recipe.description }}
         </div>
     </div>
-    <div class="row mt-1">
+    <div class="row  mt-3">
         <div class="col-sm-12">
             <ul class="list-group">
                 <li 
